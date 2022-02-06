@@ -676,6 +676,14 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
+@media (max-width: 576px) {
+  .row {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
 @media (min-width: 576px) {
   .row {
     width: 100%;
@@ -696,6 +704,14 @@ progress {
   .row {
     width: 100%;
     flex-direction: row;
+  }
+}
+@media (min-width: 1400px) {
+  .row {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
   }
 }
 
@@ -3823,7 +3839,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -3859,7 +3875,7 @@ textarea.form-control-lg {
   color: #dee2e6;
 }
 .dropdown-menu-dark .dropdown-header {
-  color: #adb5bd;
+  color: #fff;
 }
 
 .btn-group,
@@ -4172,9 +4188,9 @@ textarea.form-control-lg {
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
-  .navbar-expand-sm .offcanvas-header {
+  /* .navbar-expand-sm .offcanvas-header {
     display: none;
-  }
+  } */
   .navbar-expand-sm .offcanvas {
     position: inherit;
     bottom: 0;
@@ -4434,7 +4450,7 @@ textarea.form-control-lg {
   flex-basis: auto;
 }
 .navbar-expand .navbar-toggler {
-  display: none;
+  display: flex;
 }
 .navbar-expand .offcanvas-header {
   display: none;
@@ -4465,38 +4481,38 @@ textarea.form-control-lg {
 }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 .navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(9, 31, 228, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 .navbar-light .navbar-toggler {
-  color: rgba(9, 31, 228, 0.55);
-  border-color: rgba(9, 31, 228, 0.1);
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-light .navbar-text {
-  color: rgba(9, 31, 228, 0.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
-  color: rgba(9, 31, 228, 0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar-dark .navbar-brand {
@@ -11354,13 +11370,13 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #2ec4fc;
+  background-color: #ffffff;
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  color: #fff;
+  color: #3a71d8;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #3a71d8;
@@ -11378,16 +11394,17 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background-color: #ffffff;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(100, 155, 230, 0.7);
+    
   }
   #mainNav .navbar-brand:hover {
     color: #3a71d8;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(100, 155, 230, 0.7);
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11438,9 +11455,7 @@ header.masthead h1, header.masthead .h1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
-
-    
+        
   }
   header.masthead p {
     font-size: 1.5rem;
