@@ -598,10 +598,13 @@ progress {
 .blockquote-footer::before {
   content: "— ";
 }
-
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  margin: 0;
+  display: block;
+  
 }
 
 .img-thumbnail {
@@ -11446,6 +11449,12 @@ header.masthead h1, header.masthead .h1 {
   font-size: 2.45rem;
 }
 
+header h5 { 
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100%;
@@ -11506,12 +11515,13 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+.feature {
+  max-height: 350px;
+}
 
 .feature img {
-  margin-bottom: 30px;
-  max-width: 300px;
-  max-height: 300px;
-  opacity: 80%;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .feature h3 { 
@@ -11531,9 +11541,9 @@ section #title {
   color: lightcyan;
   box-shadow: -10px 5px 5px #ffff;
   border-radius: 10px;
-  margin-bottom: 70px;
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding-left: 20px;
+  padding-top: 20px;
 
 
 }
@@ -11543,38 +11553,38 @@ section #title1 {
   font-weight: 100;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:  #3a71d8;
-  box-shadow: -10px 5px 5px lightblue;
+  box-shadow: -10px 5px 5px #fff;
   border-radius: 10px;
-  margin-bottom: 70px;
-  margin-top: 70px;
+  margin-bottom: 30px;
   padding-left: 20px;
+  padding-top: 20px;
+
+}
+section { 
+  padding: 20px;
 
 }
 
- #about { 
-   background-size: auto;
-   background-repeat:no-repeat;
-   background: linear-gradient(to bottom, rgba(50, 100, 136, 0) 0%, rgba(92, 170, 106, 0.2) 80%), url("../assets/img/fundoquemsomos2.jpg"), center, center, fixed;
-  
- }
+#about,#services, #portfolio { 
+      background-color: #2ec4fc;
+      background: linear-gradient(10deg, lightblue 50%, 2ec4fc 50%);
+  }
 
- section #servicos { 
-
-   margin-bottom: 40px;
-  
- }
  section #servicos img { 
   max-width: 200px;
   max-height: 200px;
-  margin: 10px;
+  margin: 30px;
 }
 
  section #servicos p { 
-  color: black;
+  color: #e4eafe;
   font-size: 0.8rem;
-  text-align:justify;
+  width: 200px;
+  height: 200px; 
+   
 }
 
  section #oferecemos p { 
   font-size: 1.3rem;
- }
+}
+
