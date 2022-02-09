@@ -667,7 +667,6 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -11439,7 +11438,6 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
   width: 100%;
-  height: 100%;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.45rem;
@@ -11511,28 +11509,30 @@ header h5 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-.feature {
-  max-height: 350px;
+.featureabout {
+  background: #084556;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.feature img {
+.featureabout img {
   max-width: 100px;
   max-height: 100px;
+  filter: invert(1);
 }
 
-.feature h3 { 
+.featureabout h3 { 
   color: #000080;
   font-weight: 100;
 
 }
-.feature p { 
+.featureabout p { 
   margin: 10px;
   color: #e4fdfe;
 }
 
 section #title { 
   font-size: 50px;
-  font-weight: 100;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: lightcyan;
   box-shadow: -10px 5px 5px #ffff;
@@ -11544,16 +11544,14 @@ section #title {
 
 }
 
-section #title1 { 
+section .title { 
   font-size: 50px;
-  font-weight: 100;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:  #3a71d8;
-  box-shadow: -10px 5px 5px #fff;
-  border-radius: 10px;
+  color:  #084556;
   margin-bottom: 30px;
   padding-left: 20px;
   padding-top: 20px;
+  border-bottom: 4px solid white;
 
 }
 section { 
@@ -11572,15 +11570,38 @@ section {
   margin: 30px;
 }
 
- section #servicos p { 
-  color: #e4eafe;
-  font-size: 0.8rem;
-  width: 200px;
-  height: 200px; 
-   
-}
 
  section #oferecemos p { 
   font-size: 1.3rem;
 }
 
+.center-content{
+  margin:0 auto;
+}
+
+@media (min-width: 472px) and (max-width: 991px) {
+ .masthead{
+  height: 600px;
+ }
+}
+
+@media (max-width: 471px) {
+  .masthead{
+   height: 750px;
+  }
+ }
+ .c-white{
+   color:white;
+ }
+
+ @media (min-width: 1200px) {
+  .featureabout{
+   height: 350px;
+  }
+ }
+ 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .featureabout{
+   height: 400px;
+  }
+ }
