@@ -11533,7 +11533,6 @@ header h5 {
 
 section #title { 
   font-size: 50px;
-  font-weight: 100;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: lightcyan;
   box-shadow: -10px 5px 5px #ffff;
@@ -11547,7 +11546,6 @@ section #title {
 
 section .title { 
   font-size: 50px;
-  font-weight: 100;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:  #084556;
   margin-bottom: 30px;
